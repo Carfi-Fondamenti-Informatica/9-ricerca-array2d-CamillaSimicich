@@ -16,7 +16,7 @@ void init (char x[], int a){
 
 }
 
-int ricerca (char elenco_nomi [10][20], char nome [20]){
+int cerca (char elenco_nomi [10][20], char nome [20]){
     int t;
     for (int i=0; i<10; i++) {
         t = 0;
