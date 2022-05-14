@@ -16,12 +16,12 @@ void init (char x[], int a){
 
 }
 
-int cerca (char elenco_nomi [10][20], char name [20]){
+int cerca (char elenco_nomi [10][20], char nome [20]){
     int t;
     for (int i=0; i<10; i++) {
         t = 0;
         for (int j = 0; j < 20; j++) {
-            if (elenco_nomi[i][j] == name[j]) {
+            if (elenco_nomi[i][j] == nome[j]) {
                 t++;
             } else
                 break;
