@@ -23,7 +23,7 @@ int cerca (char elenco_nomi [10][20], char nome [20]){
         for (int j = 0; j < 20; j++) {
             if (elenco_nomi[i][j] == nome[j]) {
                 c++;
-            } else
+            } else {
                 break;
         }
         if (c == 20) {
