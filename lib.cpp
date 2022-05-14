@@ -16,17 +16,17 @@ void init (char x[], int a){
 
 }
 
-int ricerca (char lista_nomi [10][20], char nome [20]){
-    int c;
+int ricerca (char elenco_nomi [10][20], char nome [20]){
+    int t;
     for (int i=0; i<10; i++) {
-        c = 0;
+        t = 0;
         for (int j = 0; j < 20; j++) {
-            if (lista_nomi[i][j] == nome[j]) {
-                c++;
+            if (elenco_nomi[i][j] == nome[j]) {
+                t++;
             } else
                 break;
         }
-        if (c == 20) {
+        if (t == 20) {
             return i;
         }
     }
