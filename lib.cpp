@@ -17,18 +17,18 @@ void init (char x[], int a){
 }
 
 int cerca (char elenco_nomi [10][20], char nome [20]){
-    int t;
+    int c;
     for (int i=0; i<10; i++) {
-        t = 0;
+        c = 0;
         for (int j = 0; j < 20; j++) {
             if (elenco_nomi[i][j] == nome[j]) {
-                t++;
+                c++;
             } else
                 break;
         }
-        if (t == 20) {
+        if (c == 20) {
             return i;
         }
     }
     return -1;
-    }
+}
